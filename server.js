@@ -1,8 +1,11 @@
 require ('dotenv').config();
 const express = require('express');
 const app = express();
+const mongoose = require('mongoose');
+const mongodb = require ('mongodb');
 const bodyParser = require ('body-parser');
 const cors = require ('cors');
+const axios = require ('axios');
 
 
 const PORT = process.env.PORT || 3000 ;
